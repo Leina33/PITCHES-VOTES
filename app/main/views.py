@@ -1,5 +1,6 @@
 from flask import render_template
 from . import main
+from flask_login import login_required
 
 # Views
 @main.route('/')
@@ -12,7 +13,8 @@ def index():
     return render_template('index.html',title = title)
 
 #dynamic route for pitch.html
-@main.route('/pitches/<int:pitches_id>')
+@main.route('/pitches/<int:pitches_id>' method = ['GET','POST'])
+@login_required
 def pitches(pitches_id):
 
     '''
