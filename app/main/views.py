@@ -8,8 +8,8 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    message = 'users pitches'
-    return render_template('index.html',message = message)
+    title = 'Welcome to wise users pitches'
+    return render_template('index.html',title = title)
 
 #dynamic route for pitch.html
 @main.route('/pitches/<int:pitches_id>')

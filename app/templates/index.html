@@ -1,1 +1,11 @@
-<h1> {{ message }} </h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        {% if title %}
+        <title> {{title }} </title>
+        {%else %}
+        <title> Wise Users pitches</title>
+        {% endif %}
+    </head>
+</html>
