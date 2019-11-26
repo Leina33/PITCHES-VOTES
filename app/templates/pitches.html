@@ -1,1 +1,12 @@
-<h1> welcome to users pitches{{ id }} </h1>
+{% extends 'base.html'%}
+
+    {% block content %}
+    {% if title %}
+    
+    {%else %}
+    
+    {% endif %}
+  
+    <h2> {{ title }} </h2>
+    
+{% endblock%}

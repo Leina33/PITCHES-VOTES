@@ -3,6 +3,7 @@ from wtforms import StringField,PasswordField,SubmitField
 from wtforms.validators import Required,Email,EqualTo
 from ..models import User
 from wtforms import ValidationError
+from wtforms import StringField,PasswordField,BooleanField,SubmitField
 
 class RegistrationForm(FlaskForm):
     email = StringField('Your Email Address',validators=[Required(),Email()])
@@ -15,9 +16,11 @@ class RegistrationForm(FlaskForm):
         if User.query.filter_by(email = data_field.data).first():
             raise ValidationError('There is an account with email')
     
-    def validate-username(self,data_field):
+    def validate_username(self,data_field):
         if User.query.filter_by(username = data_field.data).first():
             raise validationError('That username is taken')
+
+#class login
         
 
   

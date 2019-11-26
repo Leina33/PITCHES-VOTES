@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    
+    SECRET_KEY = 'dominic'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:dominic@localhost/pitches'
     
 

@@ -9,11 +9,12 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    title = 'Welcome to wise users pitches'
-    return render_template('index.html',title = title)
+    # title = 'Welcome to wise users pitches'
+    message = 'PITCH APPLICATION'
+    return render_template('index.html',message = message)
 
 #dynamic route for pitch.html
-@main.route('/pitches/<int:pitches_id>' method = ['GET','POST'])
+@main.route('/pitches/<int:pitches_id>', methods= ['GET','POST'])
 @login_required
 def pitches(pitches_id):
 
