@@ -7,7 +7,7 @@ An application that users can sign up pitch his/her topic and can receive emails
 ## Description
 
 Pitches is a web application that allow user to post a pitch of any title, be it business ,potitics or lifestyle, he/she can vote or devote other people pitches, add comments by signing.
-You can view the site at: https://pitches.herokuapp.com
+You can view the site at: https://vote-pitches.herokuapp.com/
 
 ## User Stories
 
